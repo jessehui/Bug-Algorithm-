@@ -1,6 +1,5 @@
 # Bug-Algorithm-
 <img class="alignnone size-full wp-image-176" src="https://jessehui.files.wordpress.com/2016/01/e5b18fe5b995e5bfabe785a7-2016-01-08-e4b88be58d8811-53-28.png" alt="屏幕快照 2016-01-08 下午11.53.28" width="1802" height="1152" /><img class="alignnone size-full wp-image-178" src="https://jessehui.files.wordpress.com/2016/01/e5b18fe5b995e5bfabe785a7-2016-01-08-e4b88be58d8811-53-46.png" alt="屏幕快照 2016-01-08 下午11.53.46" width="1918" height="1172" /><img class="alignnone size-full wp-image-179" src="https://jessehui.files.wordpress.com/2016/01/e5b18fe5b995e5bfabe785a7-2016-01-08-e4b88be58d8811-54-18.png" alt="屏幕快照 2016-01-08 下午11.54.18" width="1914" height="1246" /><img class="alignnone size-full wp-image-177" 
-
 src="https://jessehui.files.wordpress.com/2016/01/e5b18fe5b995e5bfabe785a7-2016-01-08-e4b88be58d8811-54-41.png" alt="屏幕快照 2016-01-08 下午11.54.41" width="1810" height="1190" />
 
 &nbsp;
