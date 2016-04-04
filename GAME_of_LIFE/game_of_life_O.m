@@ -4,18 +4,32 @@ clc
 %define
 DEAD = 0;
 ALIVE = 1;
-MAX_COL = 30;%matrix column number
-MAX_ROW = 30;
+MAX_COL = 31;%matrix column number
+MAX_ROW = 31;
 GAME_MAP = zeros(MAX_ROW,MAX_COL);
 GEN = 20;%generation
 
 %initiative pattern
 NEW_MAP = zeros(MAX_ROW,MAX_COL,GEN);
-GAME_MAP(13:17,13) = ALIVE;
-GAME_MAP(13:17,17) = ALIVE;
-GAME_MAP(13,15) = ALIVE;
+
+%pattern 1 : center (8,8)
+GAME_MAP(6:10,6) = ALIVE;
+GAME_MAP(6:10,10) = ALIVE;
+GAME_MAP(6,8) = ALIVE;
 %GAME_MAP(15,15) = ALIVE;
-GAME_MAP(17,15) = ALIVE;
+GAME_MAP(10,8) = ALIVE;
+
+%pattern 2 : center (9,24)
+GAME_MAP(8:9,23) = ALIVE;
+GAME_MAP(8:9,25) = ALIVE;
+GAME_MAP(7:8,24) = ALIVE;
+GAME_MAP(10,24) = ALIVE;
+
+%pattern 3 : center (23,6)
+GAME_MAP(23,5:7) = ALIVE;
+GAME_MAP(22:24,6) = ALIVE;
+
+
 
 figure
 imagesc(GAME_MAP);
