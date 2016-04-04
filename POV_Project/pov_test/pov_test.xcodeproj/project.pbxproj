@@ -1,0 +1,118 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		FA848AD61CB2C76700C775D3 /* 74hc595.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = 74hc595.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/74hc595.c"; sourceTree = "<group>"; };
+		FA848AD71CB2C76700C775D3 /* 74hc595.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = 74hc595.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/74hc595.h"; sourceTree = "<group>"; };
+		FA848AD81CB2C76700C775D3 /* display_figure.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = display_figure.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/display_figure.c"; sourceTree = "<group>"; };
+		FA848AD91CB2C76700C775D3 /* display_figure.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = display_figure.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/display_figure.h"; sourceTree = "<group>"; };
+		FA848ADA1CB2C76700C775D3 /* display_hand.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = display_hand.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/display_hand.c"; sourceTree = "<group>"; };
+		FA848ADB1CB2C76700C775D3 /* display_hand.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = display_hand.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/display_hand.h"; sourceTree = "<group>"; };
+		FA848ADC1CB2C76700C775D3 /* display.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = display.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/display.c"; sourceTree = "<group>"; };
+		FA848ADD1CB2C76700C775D3 /* display.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = display.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/display.h"; sourceTree = "<group>"; };
+		FA848ADE1CB2C76700C775D3 /* ds1302.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = ds1302.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/ds1302.c"; sourceTree = "<group>"; };
+		FA848ADF1CB2C76700C775D3 /* ds1302.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = ds1302.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/ds1302.h"; sourceTree = "<group>"; };
+		FA848AE01CB2C76700C775D3 /* EEPROM.C */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; name = EEPROM.C; path = "../../../../POV资料/第五版工程源文件V5.2.1/EEPROM.C"; sourceTree = "<group>"; };
+		FA848AE11CB2C76700C775D3 /* EEPROM.H */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.h; name = EEPROM.H; path = "../../../../POV资料/第五版工程源文件V5.2.1/EEPROM.H"; sourceTree = "<group>"; };
+		FA848AE21CB2C76700C775D3 /* Exti.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = Exti.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/Exti.c"; sourceTree = "<group>"; };
+		FA848AE31CB2C76700C775D3 /* Exti.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = Exti.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/Exti.h"; sourceTree = "<group>"; };
+		FA848AE41CB2C76700C775D3 /* IR_KEY.C */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; name = IR_KEY.C; path = "../../../../POV资料/第五版工程源文件V5.2.1/IR_KEY.C"; sourceTree = "<group>"; };
+		FA848AE51CB2C76700C775D3 /* IR_KEY.H */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.h; name = IR_KEY.H; path = "../../../../POV资料/第五版工程源文件V5.2.1/IR_KEY.H"; sourceTree = "<group>"; };
+		FA848AE61CB2C76700C775D3 /* IR.C */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.cpp; name = IR.C; path = "../../../../POV资料/第五版工程源文件V5.2.1/IR.C"; sourceTree = "<group>"; };
+		FA848AE71CB2C76700C775D3 /* IR.H */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.h; name = IR.H; path = "../../../../POV资料/第五版工程源文件V5.2.1/IR.H"; sourceTree = "<group>"; };
+		FA848AE81CB2C76700C775D3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = main.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/main.c"; sourceTree = "<group>"; };
+		FA848AE91CB2C76700C775D3 /* povdat.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = povdat.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/povdat.c"; sourceTree = "<group>"; };
+		FA848AEA1CB2C76700C775D3 /* povdat.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = povdat.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/povdat.h"; sourceTree = "<group>"; };
+		FA848AEB1CB2C76700C775D3 /* Time.c */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.c; name = Time.c; path = "../../../../POV资料/第五版工程源文件V5.2.1/Time.c"; sourceTree = "<group>"; };
+		FA848AEC1CB2C76700C775D3 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.c.h; name = Time.h; path = "../../../../POV资料/第五版工程源文件V5.2.1/Time.h"; sourceTree = "<group>"; };
+		FA848AED1CB2C76700C775D3 /* UART.H */ = {isa = PBXFileReference; fileEncoding = 2147483673; lastKnownFileType = sourcecode.cpp.h; name = UART.H; path = "../../../../POV资料/第五版工程源文件V5.2.1/UART.H"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		FA848ACF1CB2C6BF00C775D3 = {
+			isa = PBXGroup;
+			children = (
+				FA848AD61CB2C76700C775D3 /* 74hc595.c */,
+				FA848AD71CB2C76700C775D3 /* 74hc595.h */,
+				FA848AD81CB2C76700C775D3 /* display_figure.c */,
+				FA848AD91CB2C76700C775D3 /* display_figure.h */,
+				FA848ADA1CB2C76700C775D3 /* display_hand.c */,
+				FA848ADB1CB2C76700C775D3 /* display_hand.h */,
+				FA848ADC1CB2C76700C775D3 /* display.c */,
+				FA848ADD1CB2C76700C775D3 /* display.h */,
+				FA848ADE1CB2C76700C775D3 /* ds1302.c */,
+				FA848ADF1CB2C76700C775D3 /* ds1302.h */,
+				FA848AE01CB2C76700C775D3 /* EEPROM.C */,
+				FA848AE11CB2C76700C775D3 /* EEPROM.H */,
+				FA848AE21CB2C76700C775D3 /* Exti.c */,
+				FA848AE31CB2C76700C775D3 /* Exti.h */,
+				FA848AE41CB2C76700C775D3 /* IR_KEY.C */,
+				FA848AE51CB2C76700C775D3 /* IR_KEY.H */,
+				FA848AE61CB2C76700C775D3 /* IR.C */,
+				FA848AE71CB2C76700C775D3 /* IR.H */,
+				FA848AE81CB2C76700C775D3 /* main.c */,
+				FA848AE91CB2C76700C775D3 /* povdat.c */,
+				FA848AEA1CB2C76700C775D3 /* povdat.h */,
+				FA848AEB1CB2C76700C775D3 /* Time.c */,
+				FA848AEC1CB2C76700C775D3 /* Time.h */,
+				FA848AED1CB2C76700C775D3 /* UART.H */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		FA848AD01CB2C6BF00C775D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = FA848AD31CB2C6BF00C775D3 /* Build configuration list for PBXProject "pov_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA848ACF1CB2C6BF00C775D3;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		FA848AD41CB2C6BF00C775D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		FA848AD51CB2C6BF00C775D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA848AD31CB2C6BF00C775D3 /* Build configuration list for PBXProject "pov_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA848AD41CB2C6BF00C775D3 /* Debug */,
+				FA848AD51CB2C6BF00C775D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA848AD01CB2C6BF00C775D3 /* Project object */;
+}
