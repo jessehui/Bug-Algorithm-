@@ -50,11 +50,47 @@ void Send_data_B(uchar temp)
 /****************
 //发送数据C
 *****************/
-void Send
+void Send_data_C(uchar temp1, uchar temp2)
+{
+	uchar i;
+	for(i=0;i<8;i++)
+	{
+		SCKC = 0;
+		SDAC = (bit)(temp1&0x01);
+		temp1 = temp1 << 1;
+		SCKC = 1;
+	}
+
+	for(i=0;i<8;i++)
+	{
+		SCKC = 0;
+		//test: any difference with temp1
+		SDAC = (bit)(temp2&0x08);
+		temp2 = temp2 >> 1;
+		SCKC = 1;
+	}
+
+	STRC = 1;
+	STRC = 0;
+
+}
+
+/***************************
+打开595显示
+****************************/
+void dis_open()
+{
+	OEA = OEB = OEC = 0;//低电平有效
+}
 
 
-
-
+/***************************
+关闭595显示
+****************************/
+void dis_close()
+{
+	OEA = OEB = OEC = 1;//高电平对应高阻态
+}
 
 
 
