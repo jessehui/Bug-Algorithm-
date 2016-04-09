@@ -31,3 +31,5 @@ extern void dis_open(void);
 extern void dis_close(void);
 
 extern void delay(void);
+
+#endif
