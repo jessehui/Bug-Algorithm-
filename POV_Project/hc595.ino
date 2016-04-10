@@ -11,9 +11,9 @@ void setup()
   pinMode(DI,OUTPUT);
   Serial.begin(9600);
   Serial.println("start");
-  Serial_Dis(134);   //10000110
+  Serial_Dis(134,188,196,212);   //10000110
   delay(5000);
-  Serial_Dis(188);  //10111100
+  //Serial_Dis(188);  //10111100
   delay(10000000);
 }
 
@@ -52,32 +52,54 @@ void registerWrite(int Num, int State)
 }
 
 
-void Serial_Dis(int Pat)//Pat is a hex number e.g. 0xfc
+void Serial_Dis(int Pat3, int Pat2, int Pat1, int Pat0)//Pat is a hex number e.g. 0xfc
 {
-  int bits[7] = {0};
-  byte bitstosend = 0;
-  char i;
+  int Pat[4] = {Pat0,Pat1,Pat2,Pat3};
+  int bits[4][7] = {0};
+  byte bitstosend[4] = {0};
+  char i,j;
   
-  bits[7] = Pat/128;
-  bits[6] = (Pat%128)/64;
-  bits[5] = (Pat%64)/32;
-  bits[4] = (Pat%32)/16;
-  bits[3] = (Pat%16)/8;
-  bits[2] = (Pat%8)/4;
-  bits[1] = (Pat%4)/2;
-  bits[0] = Pat%2;
+  for(j=0;j<4;i++)
+  {    
+    bits[j][7] = Pat[j]/128;
+    bits[j][6] = (Pat[j]%128)/64;
+    bits[j][5] = (Pat[j]%64)/32;
+    bits[j][4] = (Pat[j]%32)/16;
+    bits[j][3] = (Pat[j]%16)/8;
+    bits[j][2] = (Pat[j]%8)/4;
+    bits[j][1] = (Pat[j]%4)/2;
+    bits[j][0] = Pat[j]%2;
+  }
+
+  Serial.println(Pat[3]);
+  Serial.println(Pat[2]);
+  Serial.println(Pat[1]);
+  Serial.println(Pat[0]);
 
   digitalWrite(ST,LOW);
-  for(i=0;i<8;i++)
+  for(j=0;j<4;j++)
   {
-    bitWrite(bitstosend,i,bits[i]);
+    for(i=0;i<8;i++)
+    {
+      bitWrite(bitstosend[j],i,bits[j][i]);
+    }
+     Serial.print("bitstosend");
+     Serial.print(j);
+     Serial.print(" = ");
+     Serial.print(bitstosend[j],DEC);
+     Serial.println("");
   }
-  
-  Serial.print("bitstosend = ");
-  Serial.print(bitstosend,DEC);
-  Serial.println("");
+
+
+  // Serial.print("bitstosend = ");
+  // Serial.print(bitstosend,DEC);
+  // Serial.println("");
   //delay(3000);
-  shiftOut(DI,SH,MSBFIRST,bitstosend);
+  for(j=3;j>=0;j--)
+  {
+    shiftOut(DI,SH,MSBFIRST,bitstosend[j]);
+
+  }
   Serial.println("Shift Complete");
   digitalWrite(ST,HIGH);
   
