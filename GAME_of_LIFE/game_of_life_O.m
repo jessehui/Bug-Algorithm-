@@ -7,7 +7,7 @@ ALIVE = 1;
 MAX_COL = 20;%matrix column number
 MAX_ROW = 32;
 GAME_MAP = zeros(MAX_ROW,MAX_COL);
-GEN = 2;%generation
+GEN = 20;%generation
 
 %initiative pattern
 NEW_MAP = zeros(MAX_ROW,MAX_COL,GEN);
@@ -56,6 +56,7 @@ end
 %get decimal value for each 74hc595
 %function LED_DEC = LED_dis_v2(Gen_Num, Mat)
 dec_pic2 = LED_dis_v2(2,NEW_MAP)
+dec_pic = LED_dis_v2(GEN,NEW_MAP)
 
 
 
