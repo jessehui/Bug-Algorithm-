@@ -1,8 +1,20 @@
 #include <POV_lib.h>
 //number display on the top
+//RED
 //MCU1
+//
+//#define TEST_TIME  65
+//#define TIME_INDEX 1000
+//
+//////delay(65-66)
+//////delaymicroseconds(65700)
+////#define TEST_TIME  657000
+//
+//#define COMM  19
+//#define HI_LEV  1
 
-#define TEST_TIME  68
+char state;
+int flag = 1;//loop times
 
 void setup()
 {
@@ -18,7 +30,8 @@ void setup()
   }
   
   //communication pin
-  //pinMode(,OUTPUT);
+  pinMode(COMM,OUTPUT);
+  digitalWrite(COMM,LOW);//low
  
   
   
@@ -38,8 +51,16 @@ void loop()
   delayMicroseconds(STILL_TIME);
   
   //after display "1", send a signal to MCU2
-  //digitalWrite(,HIGH);
+  if(flag >= 60)
+  {
+    digitalWrite(COMM,HIGH);//high
+    Serial.println("if 1");
+    //delay(100);
+    
+  }
   
+  //delay(1000);
+  //Serial.println(state);
   
   //*****************************
   //display "2" test
@@ -50,7 +71,7 @@ void loop()
   delayMicroseconds(STILL_TIME);
   Serial_Dis2(1,0,232,0);
   delayMicroseconds(STILL_TIME);
-  blank_Clock_Stay(TEST_TIME);//wait for the "3" position
+  blank_Clock_Stay(TEST_TIME,TIME_INDEX);//wait for the "3" position
   
   //*****************************
   //display "3" test
@@ -61,8 +82,8 @@ void loop()
   delayMicroseconds(STILL_TIME);
   Serial_Dis2(1,0,248,0);
   delayMicroseconds(STILL_TIME);
-  blank_Clock_Stay(TEST_TIME);
-  
+  blank_Clock_Stay(TEST_TIME,TIME_INDEX);
+  digitalWrite(COMM,LOW);
   //*****************************
   //display "6" test
   // 1111 1000, 1010 1000, 0011 1000
@@ -72,7 +93,7 @@ void loop()
   delayMicroseconds(STILL_TIME);
   Serial_Dis2(1,0,56,0);
   delayMicroseconds(STILL_TIME);
-  blank_Clock_Stay(TEST_TIME);
+  blank_Clock_Stay(TEST_TIME,TIME_INDEX);
   
   //*****************************
   //display "9" test
@@ -83,14 +104,20 @@ void loop()
   delayMicroseconds(STILL_TIME);
   Serial_Dis2(1,0,248,0);
   delayMicroseconds(STILL_TIME);
-  blank_Clock_Stay(TEST_TIME);
+  blank_Clock_Stay(TEST_TIME,TIME_INDEX);
+  //digitalWrite(COMM,HIGH);
+  //delay(1000);
+  //delay(3000);//test
   
-  
+  //Serial.println(state);
   //number go anticlockwise:delay longer; 
   //          clockwise    :delay shorter;
   
   //test
   //blank_Clock_Stay(430);
+  Serial.print("flag = ");
+  Serial.println(flag,DEC);
+  flag++;
   
   
  //*****************************
@@ -114,3 +141,4 @@ void loop()
 
   
 }
+
