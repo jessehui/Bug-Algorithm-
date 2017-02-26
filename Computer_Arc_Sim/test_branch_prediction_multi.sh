@@ -8,21 +8,21 @@ echo -e "\n\r Multi-parameter Branch Prediction Test" >> res5.txt
 
 echo -e "\n\r 1. Low power test" >> res5.txt
 
-echo "2lev: (1:512:8:0), ras: (0, 8, 16, 32)"
+echo "2lev: (1:512:8:0), ras: (0, 8, 16, 32)" >> res5.txt
 for k in $(seq 0 4)
 do
-	echo "ras = $[k*8]" >> res5. txt
-	sim-outorder -bpred:2lev 1 512 8 0  -bpred:ras $[k*8] -dumpconfig new_cfg
+	echo "ras = $[k*8]" >> res5.txt
+	sim-outorder -bpred:2lev 1 512 8 0 -bpred:ras $[k*8] -dumpconfig new_cfg
 	sim-outorder -config new_cfg eeg 2>&1 | grep -e "sim_IPC" -e "sim_CPI" -e "avg_total_power_cycle_cc3" | tee -a res5.txt
 	echo -e "\n" >> res5.txt
 done
 
 
-echo -e "\r\n 2lev: (1:256:8:0), ras: (0, 8, 16, 32)"
+echo -e "\r\n 2lev: (1:256:8:0), ras: (0, 8, 16, 32)" >> res5.txt
 for k in $(seq 0 4)
 do
-	echo "ras = $[k*8]" >> res5. txt
-	sim-outorder -bpred:2lev 1 256 8 0  -bpred:ras $[k*8] -dumpconfig new_cfg
+	echo "ras = $[k*8]" >> res5.txt
+	sim-outorder -bpred:2lev 1 256 8 0 -bpred:ras $[k*8] -dumpconfig new_cfg
 	sim-outorder -config new_cfg eeg 2>&1 | grep -e "sim_IPC" -e "sim_CPI" -e "avg_total_power_cycle_cc3" | tee -a res5.txt
 	echo -e "\n" >> res5.txt
 done

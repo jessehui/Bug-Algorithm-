@@ -63,7 +63,7 @@ echo -e "\n 6. instruction commit b/w" >> res4.txt
 for k in $(seq 1 4)
 do
 	echo "commit width $[k*4]" >> res4.txt
-	sim-outorder -issue:width $[k*4] -dumpconfig new_cfg
+	sim-outorder -commit:width $[k*4] -dumpconfig new_cfg
 	sim-outorder -config new_cfg eeg 2>&1 | grep -e "sim_IPC" -e "sim_CPI" -e "avg_total_power_cycle_cc3" | tee -a res4.txt
 	echo -e "\n" >> res4.txt
 done

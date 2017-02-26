@@ -93,7 +93,7 @@ do
 	sim-outorder -config new_cfg eeg 2>&1 | grep -e "sim_IPC" -e "sim_CPI" -e "avg_total_power_cycle_cc3" | tee -a result_1.txt
 	echo -e "\n" >> result_1.txt
 done
-
+### 
 ##############
 echo -e "\n" >> result_1.txt
 echo "5. BTB config" >> result_1.txt
