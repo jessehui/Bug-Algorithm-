@@ -4,7 +4,7 @@ make
 
 #memory system test
 touch res3.txt
-echo -e "\n Memory System TEST" >> res3.txt
+echo -e "\n Function Unit test" >> res3.txt
 
 
 
