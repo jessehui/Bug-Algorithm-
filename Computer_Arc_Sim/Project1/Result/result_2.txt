@@ -1,0 +1,103 @@
+Default Configuration: 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3101 # average total power per cycle_cc3
+
+ Memory System TEST
+
+ 1. L1 data cache config dl1
+dl1:64:32:4:l
+sim_IPC                      1.5185 # instructions per cycle
+sim_CPI                      0.6586 # cycles per instruction
+avg_total_power_cycle_cc3      17.4632 # average total power per cycle_cc3
+dl1:256:32:4:l
+sim_IPC                      1.5236 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      19.4561 # average total power per cycle_cc3
+dl1:512:32:4:l
+sim_IPC                      1.5236 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      21.1113 # average total power per cycle_cc3
+dl1:128:64:4:l
+sim_IPC                      1.5238 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      19.3362 # average total power per cycle_cc3
+dl1:128:32:16:l
+sim_IPC                      1.5236 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      22.7087 # average total power per cycle_cc3
+dl1:128:32:4:f
+sim_IPC                      1.5223 # instructions per cycle
+sim_CPI                      0.6569 # cycles per instruction
+avg_total_power_cycle_cc3      18.3370 # average total power per cycle_cc3
+dl1:128:32:4:r
+sim_IPC                      1.5215 # instructions per cycle
+sim_CPI                      0.6572 # cycles per instruction
+avg_total_power_cycle_cc3      18.3016 # average total power per cycle_cc3
+
+
+ 2. L2 data cache config  dl2
+dl2:2048:64:4:l
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      38.8114 # average total power per cycle_cc3
+dl2:512:64:4:l
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      23.9807 # average total power per cycle_cc3
+dl2:1024:16:4:l
+sim_IPC                      1.5232 # instructions per cycle
+sim_CPI                      0.6565 # cycles per instruction
+avg_total_power_cycle_cc3      22.3775 # average total power per cycle_cc3
+dl2:1024:256:4:l
+sim_IPC                      0.1143 # instructions per cycle
+sim_CPI                      8.7500 # cycles per instruction
+avg_total_power_cycle_cc3      19.3361 # average total power per cycle_cc3
+dl2:1024:64:1:l
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      38.7811 # average total power per cycle_cc3
+dl2:1024:64:16:l
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      38.7981 # average total power per cycle_cc3
+dl2:1024:64:4:f
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      38.7963 # average total power per cycle_cc3
+dl2:1024:64:4:r
+sim_IPC                      1.5239 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      38.7921 # average total power per cycle_cc3
+
+
+ 3. L1 instr cache config  il1
+il1:128:32:1:l
+sim_IPC                      1.0309 # instructions per cycle
+sim_CPI                      0.9700 # cycles per instruction
+avg_total_power_cycle_cc3      13.9739 # average total power per cycle_cc3
+il1:2048:32:1:l
+sim_IPC                      1.7512 # instructions per cycle
+sim_CPI                      0.5710 # cycles per instruction
+avg_total_power_cycle_cc3      24.1817 # average total power per cycle_cc3
+il1:512:128:1:l
+sim_IPC                <error: divide by zero> # instructions per cycle
+sim_CPI                <error: divide by zero> # cycles per instruction
+avg_total_power_cycle_cc3 <error: divide by zero> # average total power per cycle_cc3
+il1:512:8:1:l
+sim_IPC                      0.5967 # instructions per cycle
+sim_CPI                      1.6759 # cycles per instruction
+avg_total_power_cycle_cc3      11.4356 # average total power per cycle_cc3
+il1:512:32:4:l
+sim_IPC                      1.7513 # instructions per cycle
+sim_CPI                      0.5710 # cycles per instruction
+avg_total_power_cycle_cc3      24.2644 # average total power per cycle_cc3
+il1:512:32:16:l
+sim_IPC                      1.7513 # instructions per cycle
+sim_CPI                      0.5710 # cycles per instruction
+avg_total_power_cycle_cc3      35.8048 # average total power per cycle_cc3
+
+
+ 4. L2 instr cache config  il2
+il12 point to dl1
+END OF MEMORY SYSTEM SIMULATION

@@ -1,0 +1,136 @@
+Default Configuration: 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3101 # average total power per cycle_cc3
+-e 
+
+ Branch Prediction TEST
+-e 1. Predictor Type
+-e (1) 2lev
+sim_IPC                      1.4287 # instructions per cycle
+sim_CPI                      0.7000 # cycles per instruction
+avg_total_power_cycle_cc3      17.8654 # average total power per cycle_cc3
+-e (2) nottaken
+sim_IPC                      0.7515 # instructions per cycle
+sim_CPI                      1.3306 # cycles per instruction
+avg_total_power_cycle_cc3      14.3185 # average total power per cycle_cc3
+-e (3) taken
+sim_IPC                      0.7580 # instructions per cycle
+sim_CPI                      1.3192 # cycles per instruction
+avg_total_power_cycle_cc3      14.6071 # average total power per cycle_cc3
+-e (4) bimod
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3530 # average total power per cycle_cc3
+
+
+-e 2. bimodal predictor config
+bimod = 1024
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3341 # average total power per cycle_cc3
+-e 
+
+bimod = 2048
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.2929 # average total power per cycle_cc3
+-e 
+
+bimod = 3072
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.2991 # average total power per cycle_cc3
+-e 
+
+bimod = 4096
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3202 # average total power per cycle_cc3
+-e 
+
+-e 
+
+-e 3. 2-level predictor config
+2lev = 1: 1024: 32: 0 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3230 # average total power per cycle_cc3
+-e 
+
+2lev = 1: 2048: 8: 0 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3545 # average total power per cycle_cc3
+-e 
+
+2lev = 1: 512: 8: 0 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.2827 # average total power per cycle_cc3
+-e 
+
+2lev = 4: 2048: 32: 0 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3884 # average total power per cycle_cc3
+-e 
+
+-e 
+
+-e 4. return address stack size
+
+ras = 0
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3757 # average total power per cycle_cc3
+-e 
+
+ras = 16
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3563 # average total power per cycle_cc3
+-e 
+
+ras = 32
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3975 # average total power per cycle_cc3
+-e 
+
+-e 
+
+-e 5. BTB config
+btb = 128 4 
+sim_IPC                      1.5226 # instructions per cycle
+sim_CPI                      0.6568 # cycles per instruction
+avg_total_power_cycle_cc3      17.9109 # average total power per cycle_cc3
+-e 
+
+btb = 2048 4 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.8229 # average total power per cycle_cc3
+-e 
+
+btb = 512 16 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.7979 # average total power per cycle_cc3
+-e 
+
+btb = 512 1 
+sim_IPC                      1.5223 # instructions per cycle
+sim_CPI                      0.6569 # cycles per instruction
+avg_total_power_cycle_cc3      17.8460 # average total power per cycle_cc3
+-e 
+
+btb = 2048 16 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      20.7426 # average total power per cycle_cc3
+-e 
+
+-e 
+
+ Memory System TEST

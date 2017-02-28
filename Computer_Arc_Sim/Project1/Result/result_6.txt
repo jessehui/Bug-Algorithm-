@@ -1,0 +1,61 @@
+
+
+ Multi - Memory System TEST
+
+
+ dl1 and dl2
+dl1: 256:32:4:l ,  dl2: 2048:64:4:l
+sim_IPC                      1.5236 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      19.5327 # average total power per cycle_cc3
+
+
+
+dl1: 512:32:4:l ,  dl2: 2048:64:16:l
+sim_IPC                      1.5237 # instructions per cycle
+sim_CPI                      0.6563 # cycles per instruction
+avg_total_power_cycle_cc3      22.6405 # average total power per cycle_cc3
+
+
+
+dl1: 256:64:4:l ,  dl2: 1024:128:16:l
+sim_IPC                      1.5238 # instructions per cycle
+sim_CPI                      0.6562 # cycles per instruction
+avg_total_power_cycle_cc3      23.3992 # average total power per cycle_cc3
+
+
+
+dl1: 64:16:4:l ,  dl2: 512:64:4:l
+sim_IPC                      1.5072 # instructions per cycle
+sim_CPI                      0.6635 # cycles per instruction
+avg_total_power_cycle_cc3      17.0312 # average total power per cycle_cc3
+
+
+
+
+
+ dl1 and il1
+dl1: 256:32:4:l ,  il1: 1024:64:1:l
+sim_IPC                      1.7524 # instructions per cycle
+sim_CPI                      0.5707 # cycles per instruction
+avg_total_power_cycle_cc3      24.6850 # average total power per cycle_cc3
+
+
+
+dl1: 512:64:4:l ,  il1: 1024:128:1:l
+sim_IPC                <error: divide by zero> # instructions per cycle
+sim_CPI                <error: divide by zero> # cycles per instruction
+avg_total_power_cycle_cc3 <error: divide by zero> # average total power per cycle_cc3
+
+
+
+dl1: 128:64:16:l ,  il1: 512:64:4:l
+sim_IPC                      1.7529 # instructions per cycle
+sim_CPI                      0.5705 # cycles per instruction
+avg_total_power_cycle_cc3      36.6994 # average total power per cycle_cc3
+
+
+
+
+
+ END Memory SIMULATION

@@ -1,0 +1,107 @@
+Default Configuration: 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3101 # average total power per cycle_cc3
+
+
+
+
+ 1. total number of integer ALUs available
+ialu 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3507 # average total power per cycle_cc3
+
+
+ialu 8
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      19.1489 # average total power per cycle_cc3
+
+
+ialu 12
+
+
+ialu 16
+
+
+
+ 2. total number of integer multiplier available
+imult 2
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3123 # average total power per cycle_cc3
+
+
+imult 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3626 # average total power per cycle_cc3
+
+
+imult 6
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3490 # average total power per cycle_cc3
+
+
+imult 8
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3540 # average total power per cycle_cc3
+
+
+
+ 3. total number of floating point ALUs available
+fpalu 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      17.3972 # average total power per cycle_cc3
+
+
+fpalu 8
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3352 # average total power per cycle_cc3
+
+
+fpalu 12
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      19.2159 # average total power per cycle_cc3
+
+
+fpalu 16
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      20.2148 # average total power per cycle_cc3
+
+
+
+ 4. total number of floating point multiplier available
+fpmult 2
+sim_IPC                      1.5345 # instructions per cycle
+sim_CPI                      0.6517 # cycles per instruction
+avg_total_power_cycle_cc3      18.4217 # average total power per cycle_cc3
+
+
+fpmult 4
+sim_IPC                      1.5388 # instructions per cycle
+sim_CPI                      0.6498 # cycles per instruction
+avg_total_power_cycle_cc3      18.4530 # average total power per cycle_cc3
+
+
+fpmult 6
+sim_IPC                      1.5388 # instructions per cycle
+sim_CPI                      0.6498 # cycles per instruction
+avg_total_power_cycle_cc3      18.4585 # average total power per cycle_cc3
+
+
+fpmult 8
+sim_IPC                      1.5388 # instructions per cycle
+sim_CPI                      0.6498 # cycles per instruction
+avg_total_power_cycle_cc3      18.4352 # average total power per cycle_cc3
+
+
+
+  END FUNCTION UNIT SIMULATION

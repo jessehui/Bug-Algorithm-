@@ -1,0 +1,68 @@
+-e FINAL SIMULATION
+
+
+-e High Performance
+
+
+-e 1. Bimod, commit width 8 
+
+
+sim_IPC                      2.1186 # instructions per cycle
+sim_CPI                      0.4720 # cycles per instruction
+avg_total_power_cycle_cc3      27.1646 # average total power per cycle_cc3
+-e 
+
+
+-e 2. Bimod, commit width 16
+
+
+sim_IPC                      2.1052 # instructions per cycle
+sim_CPI                      0.4750 # cycles per instruction
+avg_total_power_cycle_cc3      26.3169 # average total power per cycle_cc3
+-e 
+
+
+-e 3. 2-lev, commit width 8
+
+
+sim_IPC                      1.8866 # instructions per cycle
+sim_CPI                      0.5300 # cycles per instruction
+avg_total_power_cycle_cc3      25.7384 # average total power per cycle_cc3
+-e 
+
+
+-e 3. 2-lev, commit width 16
+
+
+sim_IPC                      1.8811 # instructions per cycle
+sim_CPI                      0.5316 # cycles per instruction
+avg_total_power_cycle_cc3      25.0468 # average total power per cycle_cc3
+-e 
+
+
+-e Low Power
+
+
+-e 1. Bimod, commit width 8,  BTB 128 4
+
+, RUU 16
+sim_IPC                      1.8142 # instructions per cycle
+sim_CPI                      0.5512 # cycles per instruction
+avg_total_power_cycle_cc3      21.7758 # average total power per cycle_cc3
+-e 
+
+
+-e 2. 2-lev, commit width 8
+
+ BTB 128 4
+
+, RUU 16 
+sim_IPC                      1.6911 # instructions per cycle
+sim_CPI                      0.5913 # cycles per instruction
+avg_total_power_cycle_cc3      21.6146 # average total power per cycle_cc3
+-e 
+
+
+-e 
+
+ END SIMULATION

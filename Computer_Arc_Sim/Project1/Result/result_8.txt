@@ -1,0 +1,252 @@
+
+ Data Path test
+
+ 1. instruction fetch queue size & decode width
+ifqsize 8, decode width 8
+sim_IPC                      1.6051 # instructions per cycle
+sim_CPI                      0.6230 # cycles per instruction
+avg_total_power_cycle_cc3      18.7856 # average total power per cycle_cc3
+
+
+
+ifqsize 8, decode width 12
+
+
+
+ifqsize 8, decode width 16
+sim_IPC                      1.6051 # instructions per cycle
+sim_CPI                      0.6230 # cycles per instruction
+avg_total_power_cycle_cc3      18.8079 # average total power per cycle_cc3
+
+
+
+
+
+
+ifqsize 12, decode width 8
+
+
+
+ifqsize 12, decode width 12
+
+
+
+ifqsize 12, decode width 16
+
+
+
+
+
+
+ifqsize 16, decode width 8
+sim_IPC                      1.6922 # instructions per cycle
+sim_CPI                      0.5910 # cycles per instruction
+avg_total_power_cycle_cc3      19.4114 # average total power per cycle_cc3
+
+
+
+ifqsize 16, decode width 12
+
+
+
+ifqsize 16, decode width 16
+sim_IPC                      1.6954 # instructions per cycle
+sim_CPI                      0.5898 # cycles per instruction
+avg_total_power_cycle_cc3      19.3929 # average total power per cycle_cc3
+
+
+
+
+
+
+
+ 2. instruction fetch queue size & decode width & issue width
+ifqsize 8, decode width 8, issue width 8
+sim_IPC                      1.6428 # instructions per cycle
+sim_CPI                      0.6087 # cycles per instruction
+avg_total_power_cycle_cc3      22.1847 # average total power per cycle_cc3
+
+
+
+ifqsize 8, decode width 8, issue width 12
+
+
+
+ifqsize 8, decode width 8, issue width 16
+sim_IPC                      1.6428 # instructions per cycle
+sim_CPI                      0.6087 # cycles per instruction
+avg_total_power_cycle_cc3      28.4749 # average total power per cycle_cc3
+
+
+
+ifqsize 8, decode width 12, issue width 8
+
+
+
+ifqsize 8, decode width 12, issue width 12
+
+
+
+ifqsize 8, decode width 12, issue width 16
+
+
+
+ifqsize 8, decode width 16, issue width 8
+sim_IPC                      1.6428 # instructions per cycle
+sim_CPI                      0.6087 # cycles per instruction
+avg_total_power_cycle_cc3      22.2582 # average total power per cycle_cc3
+
+
+
+ifqsize 8, decode width 16, issue width 12
+
+
+
+ifqsize 8, decode width 16, issue width 16
+sim_IPC                      1.6428 # instructions per cycle
+sim_CPI                      0.6087 # cycles per instruction
+avg_total_power_cycle_cc3      28.6554 # average total power per cycle_cc3
+
+
+
+ifqsize 12, decode width 8, issue width 8
+
+
+
+ifqsize 12, decode width 8, issue width 12
+
+
+
+ifqsize 12, decode width 8, issue width 16
+
+
+
+ifqsize 12, decode width 12, issue width 8
+
+
+
+ifqsize 12, decode width 12, issue width 12
+
+
+
+ifqsize 12, decode width 12, issue width 16
+
+
+
+ifqsize 12, decode width 16, issue width 8
+
+
+
+ifqsize 12, decode width 16, issue width 12
+
+
+
+ifqsize 12, decode width 16, issue width 16
+
+
+
+ifqsize 16, decode width 8, issue width 8
+sim_IPC                      1.7442 # instructions per cycle
+sim_CPI                      0.5733 # cycles per instruction
+avg_total_power_cycle_cc3      22.9850 # average total power per cycle_cc3
+
+
+
+ifqsize 16, decode width 8, issue width 12
+
+
+
+ifqsize 16, decode width 8, issue width 16
+sim_IPC                      1.7442 # instructions per cycle
+sim_CPI                      0.5733 # cycles per instruction
+avg_total_power_cycle_cc3      29.4572 # average total power per cycle_cc3
+
+
+
+ifqsize 16, decode width 12, issue width 8
+
+
+
+ifqsize 16, decode width 12, issue width 12
+
+
+
+ifqsize 16, decode width 12, issue width 16
+
+
+
+ifqsize 16, decode width 16, issue width 8
+sim_IPC                      1.7477 # instructions per cycle
+sim_CPI                      0.5722 # cycles per instruction
+avg_total_power_cycle_cc3      22.9842 # average total power per cycle_cc3
+
+
+
+ifqsize 16, decode width 16, issue width 12
+
+
+
+ifqsize 16, decode width 16, issue width 16
+sim_IPC                      1.7477 # instructions per cycle
+sim_CPI                      0.5722 # cycles per instruction
+avg_total_power_cycle_cc3      29.6442 # average total power per cycle_cc3
+
+
+
+
+ 3. instruction fetch queue size & commit width
+ifqsize 8, commit width 8
+sim_IPC                      1.5900 # instructions per cycle
+sim_CPI                      0.6289 # cycles per instruction
+avg_total_power_cycle_cc3      18.3228 # average total power per cycle_cc3
+
+
+
+ifqsize 8, commit width 12
+sim_IPC                      1.5900 # instructions per cycle
+sim_CPI                      0.6289 # cycles per instruction
+avg_total_power_cycle_cc3      18.1668 # average total power per cycle_cc3
+
+
+
+ifqsize 8, commit width 16
+sim_IPC                      1.5900 # instructions per cycle
+sim_CPI                      0.6289 # cycles per instruction
+avg_total_power_cycle_cc3      18.0824 # average total power per cycle_cc3
+
+
+
+ifqsize 12, commit width 8
+
+
+
+ifqsize 12, commit width 12
+
+
+
+ifqsize 12, commit width 16
+
+
+
+ifqsize 16, commit width 8
+sim_IPC                      1.6807 # instructions per cycle
+sim_CPI                      0.5950 # cycles per instruction
+avg_total_power_cycle_cc3      18.9061 # average total power per cycle_cc3
+
+
+
+ifqsize 16, commit width 12
+sim_IPC                      1.6807 # instructions per cycle
+sim_CPI                      0.5950 # cycles per instruction
+avg_total_power_cycle_cc3      18.8303 # average total power per cycle_cc3
+
+
+
+ifqsize 16, commit width 16
+sim_IPC                      1.6807 # instructions per cycle
+sim_CPI                      0.5950 # cycles per instruction
+avg_total_power_cycle_cc3      18.6778 # average total power per cycle_cc3
+
+
+
+END DATA PATH SIMULATION 

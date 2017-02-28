@@ -1,0 +1,154 @@
+Default Configuration: 
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3101 # average total power per cycle_cc3
+
+
+ Data Path & Others TEST
+
+ 1. instruction fetch queue size
+ifqsize 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3328 # average total power per cycle_cc3
+
+
+ifqsize 8
+sim_IPC                      1.5890 # instructions per cycle
+sim_CPI                      0.6293 # cycles per instruction
+avg_total_power_cycle_cc3      18.7524 # average total power per cycle_cc3
+
+
+ifqsize 12
+
+
+ifqsize 16
+sim_IPC                      1.6806 # instructions per cycle
+sim_CPI                      0.5950 # cycles per instruction
+avg_total_power_cycle_cc3      19.3962 # average total power per cycle_cc3
+
+
+
+ 2. instruction decode b/w
+decode width 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3427 # average total power per cycle_cc3
+
+
+decode width 8
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3228 # average total power per cycle_cc3
+
+
+decode width 12
+
+
+decode width 16
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3226 # average total power per cycle_cc3
+
+
+
+ 3. instruction issue b/w
+issue width 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3365 # average total power per cycle_cc3
+
+
+issue width 8
+sim_IPC                      1.5322 # instructions per cycle
+sim_CPI                      0.6527 # cycles per instruction
+avg_total_power_cycle_cc3      21.3746 # average total power per cycle_cc3
+
+
+issue width 12
+
+
+issue width 16
+sim_IPC                      1.5322 # instructions per cycle
+sim_CPI                      0.6527 # cycles per instruction
+avg_total_power_cycle_cc3      27.5353 # average total power per cycle_cc3
+
+4. inorder: true
+sim_IPC                      0.8049 # instructions per cycle
+sim_CPI                      1.2424 # cycles per instruction
+avg_total_power_cycle_cc3      13.0251 # average total power per cycle_cc3
+
+5. issue: wrongpath
+sim_IPC                      1.5216 # instructions per cycle
+sim_CPI                      0.6572 # cycles per instruction
+avg_total_power_cycle_cc3      18.1343 # average total power per cycle_cc3
+
+
+
+ 6. instruction commit b/w
+commit width 4
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3350 # average total power per cycle_cc3
+
+
+commit width 8
+sim_IPC                      1.5322 # instructions per cycle
+sim_CPI                      0.6527 # cycles per instruction
+avg_total_power_cycle_cc3      21.4118 # average total power per cycle_cc3
+
+
+commit width 12
+
+
+commit width 16
+sim_IPC                      1.5322 # instructions per cycle
+sim_CPI                      0.6527 # cycles per instruction
+avg_total_power_cycle_cc3      27.3826 # average total power per cycle_cc3
+
+
+
+ 7. register update unit (RUU) size
+register update unit (RUU) size 8
+sim_IPC                      1.2720 # instructions per cycle
+sim_CPI                      0.7861 # cycles per instruction
+avg_total_power_cycle_cc3      15.9790 # average total power per cycle_cc3
+
+
+register update unit (RUU) size 16
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.3161 # average total power per cycle_cc3
+
+
+register update unit (RUU) size 24
+
+
+register update unit (RUU) size 32
+sim_IPC                      1.5754 # instructions per cycle
+sim_CPI                      0.6348 # cycles per instruction
+avg_total_power_cycle_cc3      20.4006 # average total power per cycle_cc3
+
+
+
+ 8. load/store queue (LSQ) size
+load/store queue (LSQ) size 8
+sim_IPC                      1.5229 # instructions per cycle
+sim_CPI                      0.6567 # cycles per instruction
+avg_total_power_cycle_cc3      18.2929 # average total power per cycle_cc3
+
+
+load/store queue (LSQ) size 16
+sim_IPC                      1.5388 # instructions per cycle
+sim_CPI                      0.6498 # cycles per instruction
+avg_total_power_cycle_cc3      18.5611 # average total power per cycle_cc3
+
+
+load/store queue (LSQ) size 24
+
+
+load/store queue (LSQ) size 32
+sim_IPC                      1.5388 # instructions per cycle
+sim_CPI                      0.6498 # cycles per instruction
+avg_total_power_cycle_cc3      18.7235 # average total power per cycle_cc3
+
