@@ -32,10 +32,11 @@ sed -n 'reschedule_cost = 100' proc.cfg | sed -i 's/1000/100/g' proc.cfg
 sed -n 'penalty = 30' proc.cfg | sed -i 's/30/300/g' proc.cfg 
 
 
-make mcpat N_PROC=4 2>&1 | grep -e "total" | tee -a result.txt #total power and total area
-grep "Cycles" sim.out | tee -a result.txt	# cycles
+make mcpat N_PROC=4 2>&1 | grep -e 'total' | tee -a result.txt #total power and total area
+grep 'Cycles' sim.out | tee -a result.txt	# cycles
 
-
+#test
+make mcpat N_PROC=4 2>&1 | grep '*sniper' | tee -a result.txt #total power and total area
 
 
 
